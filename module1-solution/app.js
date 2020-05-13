@@ -16,17 +16,17 @@
       } else {
         seplunchitems = $scope.lunchitems.split(",").length;
       }
-      console.log($scope.lunchitems);
-      console.log(seplunchitems);
+      // console.log($scope.lunchitems);
+      // console.log(seplunchitems);
       if (seplunchitems == 0) {
         $scope.msgaboutlunch = "Please enter data first";
       } else if (seplunchitems <= 3) {
-        $scope.msgaboutlunch = "Enjoy!"
+        $scope.msgaboutlunch = "Enjoy!";
       } else if (seplunchitems > 3) {
         $scope.msgaboutlunch = "Too much!";
       }
       return $scope.msgaboutlunch;
-    }
+    };
 
   }
 
